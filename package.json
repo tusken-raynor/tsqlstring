@@ -35,7 +35,7 @@
     "index.js"
   ],
   "engines": {
-    "node": ">= 0.6"
+    "node": ">= 8.0"
   },
   "scripts": {
     "bench": "node benchmark/index.js",
