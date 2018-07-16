@@ -94,7 +94,7 @@ And the `toSqlString` method allows you to form complex queries with functions:
 ```js
 const GETDATE = { toSqlString: function() { return 'GETDATE()'; } };
 const sql = SqlString.format('UPDATE posts SET modified = ? WHERE id = ?', [GETDATE, 42]);
-console.log(sql); // UPDATE posts SET modified = CURRENT_TIMESTAMP() WHERE id = 42
+console.log(sql); // UPDATE posts SET modified = GETDATE() WHERE id = 42
 ```
 
 To generate objects with a `toSqlString` method, the `SqlString.raw()` method can
@@ -107,7 +107,7 @@ functions when used, so be careful when passing in un-validated input.
 ```js
 const GETDATE = SqlString.raw('GETDATE()');
 const sql = SqlString.format('UPDATE posts SET modified = ? WHERE id = ?', [GETDATE, 42]);
-console.log(sql); // UPDATE posts SET modified = CURRENT_TIMESTAMP() WHERE id = 42
+console.log(sql); // UPDATE posts SET modified = GETDATE() WHERE id = 42
 ```
 
 If you feel the need to escape queries by yourself, you can also use the escaping
