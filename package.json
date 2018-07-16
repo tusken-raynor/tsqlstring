@@ -1,23 +1,18 @@
 {
-  "name": "sqlstring",
-  "description": "Simple SQL escape and format for MySQL",
-  "version": "2.3.1",
-  "contributors": [
-    "Adri Van Houdt <adri.van.houdt@gmail.com>",
-    "Douglas Christopher Wilson <doug@somethingdoug.com>",
-    "fengmk2 <fengmk2@gmail.com> (http://fengmk2.github.com)",
-    "Kevin Jose Martin <kevin@tiliq.com>",
-    "Nathan Woltman <nwoltman@outlook.com>",
-    "Sergej Sintschilin <seregpie@gmail.com>"
-  ],
+  "name": "tsqlstring",
+  "description": "Simple SQL escape and format for T-SQL",
+  "version": "1.0.0",
+  "contributors": [],
   "license": "MIT",
   "keywords": [
     "sqlstring",
     "sql",
     "escape",
-    "sql escape"
+    "sql escape",
+    "mssql escape",
+    "tsql escape"
   ],
-  "repository": "mysqljs/sqlstring",
+  "repository": "kylefarris/tsqlstring",
   "devDependencies": {
     "beautify-benchmark": "0.2.4",
     "benchmark": "2.1.4",
